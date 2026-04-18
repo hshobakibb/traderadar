@@ -1,7 +1,9 @@
 import type { Instrument } from '@/lib/types'
 
-/* Client-side refresh — calls /api/refresh to get
-   Claude-generated live analysis for any instrument */
+/* ââââââââââââââââââââââââââââââââââââââââââââââ
+   Client-side refresh â calls /api/refresh to get
+   live analysis for any instrument
+   ââââââââââââââââââââââââââââââââââââââââââââââ */
 
 export interface RefreshResult {
   instrument: Instrument
