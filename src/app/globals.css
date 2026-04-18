@@ -457,3 +457,21 @@ input::placeholder { color: var(--mu2); }
   .mini-gauges { grid-template-columns: repeat(2, 1fr); }
   .narr-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Live Refresh Spinner */
+@keyframes spin { to { transform: rotate(360deg); } }
+.refresh-spinner {
+  display: inline-block; width: 16px; height: 16px;
+  border: 2px solid rgba(255,255,255,.2); border-top-color: var(--mu);
+  border-radius: 50%; animation: spin .8s linear infinite;
+}
+.refresh-spinner-sm {
+  display: inline-block; width: 12px; height: 12px;
+  border: 2px solid rgba(0,212,170,.2); border-top-color: var(--cy);
+  border-radius: 50%; animation: spin .8s linear infinite;
+}
+.refresh-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0,212,170,.3);
+              }
